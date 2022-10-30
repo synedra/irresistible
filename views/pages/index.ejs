@@ -4,63 +4,45 @@
   <%- include ("../partials/header.ejs") %>
 </head>
 
-<body>
-
-  <%- include ("../partials/nav.ejs") %>
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started on Heroku with Node.js</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started on Heroku with Node.js</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started on Heroku with Node.js</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/main/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
+  <body class="io-body io-font">
+    <div class="bf-header-bg bf-header-landing">
+      <%- include ("../partials/nav.ejs") %>
+      <div class="bf-book">
+        <div class="bf-book-promo">
+          <a href="http://www.manning.com/hunter/?a_aid=irresistibleapis&a_bid=d7c5993a" target="_blank" title="Get the book from Manning!" class="bf-book-link js-manning-cover">
+            <img src="CoverSmall.jpg" class="bf-book-cover"></a>
+        </div>
+        <div class="bf-book-hint">
+          <div class="box-background">
+            <h1 class="bf-header-title bf-book-title">Create Web APIs That Make<br />Your Developers Weep <br />(For Joy!)</h1>
+            <div class="product-text">
+              <p>This accessible book covers the topics you need to understand to create engaging, successful APIs:</p>
+                <ul class="product-list">
+                  <li>Process for creating first-class API platforms
+                  <li>API First development model<br>
+                  <li>Schema modeling cookbook and examples<br>
+                  <li>Business value and use cases<br>
+                  <li>… All aimed at creating an irresistible developer experience
+                </ul>
+            </div>
+            <div class="order-buttons">
+              <a href="http://www.manning.com/hunter/IrresistibleAPIs_MEAP_ch1.pdf" target="_blank" title="Get a peep for free!" class="bf-book-link bf-sample-link js-manning-sample">Check Out Free Sample Chapter Here!</a>
+              <a href="https://github.com/synedra/irresistible" target="_blank" title="Companion Code Repository" class="larger-text bf-book-link bf-sample-link js-manning-sample">Companion Code</a>
+              <a href="http://www.manning.com/hunter/?a_aid=irresistibleapis&a_bid=d7c5993a" target="_blank" title="Get the book through the Manning website!" class="larger-text bf-book-link bf-sample-link js-manning-sample order-yours">Order Yours!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sl-container">
+        <iframe allowtransparency frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?via=synedra&amp;url=http%3A//irresistibleapis.com/book.html&amp;text=Irresistible APIs /cc @manningbooks&amp;hashtags=irresistibleapis" class="sl-tweet"></iframe>
+        <iframe allowtransparency frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/like.php?href=http%3A//irresistibleapis.com/book.html&amp;width=130&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=recommend&amp;show_faces=false&amp;send=false&amp;appId=536251723135930" class="sl-fb"></iframe>
+        <iframe allowtransparency frameborder="0" scrolling="no" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;url=http%3A//irresistibleapis.com/book.html" class="sl-gplus"></iframe>
+        <iframe allowtransparency frameborder="0" scrolling="no" src="http://widgets.bufferapp.com/button/?url=http%3A//bevacqua.io/buildfirst&amp;text=JavaScript%20Application%20Design%3A%20A%20Build%20First%20Approach /cc @manningbooks&amp;picture=http%3A%2F%2Fbevacqua.io%2Fimg%2FCover.jpg&amp;via=nzgb&amp;count=horizontal&amp;placement=button" class="sl-buffer"></iframe>
+        <iframe allowtransparency frameborder="0" scrolling="no" src="http://hn-button.herokuapp.com/?title=JavaScript%20Application%20Design%3A%20A%20Build%20First%20Approach&amp;url=http%3A//bevacqua.io/buildfirst&amp;count=horizontal" class="sl-hn"></iframe>
+        <a href="http://www.reddit.com/submit?url=http%3A//bevacqua.io/buildfirst&amp;title=JavaScript%20Application%20Design%3A%20A%20Build%20First%20Approach" target="_blank" class="sl-reddit">
+        <img src="http://www.reddit.com/static/spreddit6.gif" alt="" title="Share on Reddit" class="sl-reddit-btn"></a>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started on Heroku with Node.js</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
-
-
-</body>
-</html>
+    </body>
+    </html>
+    
